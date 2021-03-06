@@ -2,7 +2,7 @@ using Strategy.TravelOptions;
 
 namespace Strategy.TravelStrategies
 {
-  class LowestCostStrategy : ITravelStrategy
+  internal class LowestCostStrategy : ITravelStrategy
   {
     public ITravelOption FindBest(ITravelOption[] travelOptions)
     {

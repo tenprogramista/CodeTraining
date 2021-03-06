@@ -4,7 +4,7 @@ using System;
 
 namespace Strategy
 {
-  class Context
+  internal class Context
   {
     private ITravelStrategy _strategy;
 
