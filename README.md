@@ -4,4 +4,4 @@ My implementation of Design Patterns and Principles based on refactoring.guru re
 ## What's inside?
 Currently there are these patterns inside the repository:
 
-- Strategy [INFO](https://refactoring.guru/design-patterns/strategy)
+- Strategy [[INFO]](https://refactoring.guru/design-patterns/strategy)
