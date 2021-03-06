@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Strategy.TravelOptions
 {
-  interface ITravelOption
+  public interface ITravelOption
   {
     int Cost { get; }
     int Time { get; }

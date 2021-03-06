@@ -1,4 +1,5 @@
-using Strategy.Strategies;
+using Strategy.TravelStrategies;
+using System;
 
 namespace Strategy
 {
@@ -8,14 +9,23 @@ namespace Strategy
     {
       var context = new Context();
 
-      context.SetStrategy(new CostEffectiveStrategy());
-      context.FindBestTravelOption();
-
+      Console.WriteLine("Setting Strategy to LowestCost");
       context.SetStrategy(new LowestCostStrategy());
       context.FindBestTravelOption();
+      Console.WriteLine();
 
-      context.SetStrategy(new QuickestRouteStrategy());
+      Console.WriteLine("Setting Strategy to ShortestTravel");
+      context.SetStrategy(new ShortestTravelStrategy());
       context.FindBestTravelOption();
+      Console.WriteLine();
+
+      Console.WriteLine("Setting Strategy to CostEfficient");
+      context.SetStrategy(new CostEffectiveStrategy());
+      context.FindBestTravelOption();
+      Console.WriteLine();
+
+      Console.WriteLine("Press Any Key to Quit");
+      Console.ReadKey();
     }
   }
 }
